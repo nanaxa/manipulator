@@ -1,0 +1,41 @@
+.header {
+    height: 100px;
+    background: #353535;
+
+    .header__content{
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: center;
+
+
+        .header__content__tel {
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            transition: color 0.5s;
+        }
+        .header__content__tel:hover {
+            color:#ccc;
+
+        }
+        .header__content__heading {
+            color: white;
+            font-weight: 400;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+        .header__content {
+            .header__content__heading {
+                margin: 0 auto;
+            }
+            .header__content__tel {
+                margin: 0 auto;
+            }
+        }
+
+}
