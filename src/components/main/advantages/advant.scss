@@ -1,0 +1,77 @@
+.main__advant {
+  width: 100%;
+  min-height: 50vh;
+  background-image: url("img/fuso.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+
+  .main__advant__overlay {
+    background-color: rgba(21,21,21,0.8);
+    min-height: 50vh;
+    width: 100%;
+
+
+    .main__advant__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      color: white;
+      display: flex;
+      flex-flow: column wrap;
+      text-align: center;
+
+        h1 {
+          margin-top: 50px;
+          font-size:calc(1em + 2vw);
+          font-weight: 400;
+          margin-bottom: 15px;
+        }
+        h3 {
+          font-size:calc(0.5em + 1.5vw);
+          font-weight: 400;
+          margin-bottom: 50px;
+        }
+        .main__advant__section__wrapper{
+          display: flex;
+          flex-flow: row wrap;
+          margin: 0 auto;
+
+            .main__advant__section {
+              max-width: (1200/3)px;
+              padding: 40px;
+              margin: 0 auto;
+              font-size:calc(0.5em + 1vw);
+                @media screen and (max-width: 570px) {
+                  h3 {
+                    font-size: 45px;
+                  }
+                }
+                @media screen and (min-width: 2050px) {
+                 h3 {
+                   font-size: 45px;
+                 }
+              }
+                span {
+                  font-size: 90px;
+                  font-weight: 200;
+                }
+            }
+
+          }
+          .main__advant__tel {
+            font-size:calc(0.5em + 1vw);
+            text-decoration: none;
+            color: black;
+            background-color: #FFE100;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+            padding: 15px;
+              &:hover {
+                background-color: #F0C700;
+              }
+
+          }
+    }
+  }
+}

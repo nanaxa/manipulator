@@ -1,9 +1,6 @@
 .options {
   width: 100%;
   background: #fff;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row wrap;
 
     .options__container {
       max-width: 1200px;
@@ -12,9 +9,14 @@
       flex-flow: row wrap;
       justify-content: space-around;
       padding-top: 50px;
+
           figure {
           max-width: 350px;
           margin-bottom: 50px;
+
+            span {
+              font-size:calc(0.5em + 1vw)
+            }
         }
     }
 }
