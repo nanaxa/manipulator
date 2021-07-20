@@ -7,12 +7,14 @@ import {Main} from "./components/main/main";
 import { Footer } from "./components/Footer/footer"
 
 let heading = "Заказать манипулятор в Томске";// Заголовок в хедере и на главной
-let tel = "+79928929292" // телефон для звонка в фирму
+export let tel = "+79095380242"; // телефон для звонка в фирму
+
+
 
 ReactDOM.render(
   <React.StrictMode>
         <Header head={heading} tel={tel} />
-        <Main tel={tel} />
+        <Main />
         <Footer />
 
   </React.StrictMode>,

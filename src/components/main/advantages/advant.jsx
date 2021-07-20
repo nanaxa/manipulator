@@ -3,8 +3,11 @@ import "./advant.scss";
 import { FaRubleSign } from 'react-icons/fa'
 import { FaClock } from "react-icons/fa";
 import { FaSearchLocation } from "react-icons/fa";
+import {tel} from "../../../index";
 
-export const Advant = (props) =>
+
+
+export const Advant = () =>
     (<section className="main__advant mask">
         <div className="main__advant__overlay">
 
@@ -31,7 +34,7 @@ export const Advant = (props) =>
                     </div>
 
                 </div>
-                <a className="main__advant__tel" href={"tel:"+props.tel}>Вызвать манипулятор</a>
+                <a className="main__advant__tel" href={"tel:"+tel}>Вызвать манипулятор</a>
 
             </div>
 
