@@ -2,7 +2,8 @@
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  background: yellow;
+  background: #1F2021;
+  color: white;
     h3 {
       font-size:calc(0.5em + 1.5vw);
       font-weight: 400;
@@ -15,20 +16,21 @@
       list-style-type: none;
       font-size:calc(0.5em + 0.5vw);
       margin-bottom: 10px;
+
     }
     ul li:first-child {
       margin: 0 auto 15px auto;
     }
     ul li a {
       text-decoration: none;
-      color: black;
+      color: white;
       transition: opacity 0.4s;
           &:hover {
             opacity: 40%;
           }
     }
     ul li span {
-      font-weight: bold;
+      font-weight: 500;
     }
 
 }
