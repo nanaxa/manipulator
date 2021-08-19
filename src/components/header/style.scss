@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    background-attachment: fixed;
 
         .header__content{
             height: 100px;
@@ -31,23 +32,41 @@
                         color:#ccc;
                     }
 
+                .header__content__link {
+                    text-decoration: none;
+                    color: #ccc;
+
                     .header__content__heading {
-                        color: white;
-                        font-weight: 400;
+                        font-weight: 450;
+
                     }
+                }
 
                     @media screen and (max-width: 550px) {
                         .header__content__heading {
                             margin: 0 auto;
                             text-align: center;
+
                         }
                         .header__content__tel {
                             margin: 0 auto;
                         }
                     }
 
+
+            }
+            @media screen and (max-width: 650px) {
+                .header__content__inner__wrapper {
+                    max-width: 650px;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    align-content: center;
+                    padding: 10px 0;
+                }
+
+            }
         }
-    }
 
     .header__info {
         height: 100%;
@@ -56,7 +75,7 @@
             .header__info__inner__wrapper {
                 max-width: 1200px;
                 height: 100%;
-
+                overflow: hidden;
                 margin: 0 auto;
                 display: flex;
                 flex-flow: column;
@@ -79,14 +98,16 @@
 
                 .header__info__tel__button {
                     text-decoration: none;
-                    color: black;
-                    padding: 10px;
-                    font-size:calc(1em + 2vw);
+                    color: white;
+                    padding: 10px 40px;
+                    font-size:calc(1em + 1vw);
                     border-radius: 10px;
-                    background-color: yellow;
-                    transition: background-color 0.4s;
+                    background-color: transparent;
+                    border: 3px solid yellow;
+                    transition: background-color, border 0.4s;
                         &:hover {
                             background-color: #F0C700 ;
+                            border: 3px solid white;
                         }
 
                 }
@@ -103,6 +124,7 @@
                         font-size: 32px !important;
                     }
                 }
+
             }
     }
 }

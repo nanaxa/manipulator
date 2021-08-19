@@ -6,7 +6,7 @@ import {Header} from "./components/header/header";
 import {Main} from "./components/main/main";
 import { Footer } from "./components/Footer/footer"
 
-let heading = "Заказать манипулятор в Томске";// Заголовок в хедере и на главной
+let heading = "Манипулятор Томск";// Заголовок в хедере и на главной
 export let tel = "+79095380242"; // телефон для звонка в фирму
 
 

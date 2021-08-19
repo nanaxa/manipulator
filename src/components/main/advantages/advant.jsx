@@ -34,7 +34,7 @@ export const Advant = () =>
                     </div>
 
                 </div>
-                <a className="main__advant__tel" href={"tel:"+tel}>Вызвать манипулятор</a>
+                <a className="main__advant__tel" href={"tel:"+tel}>ЗАКАЗАТЬ МАНИПУЛЯТОР</a>
 
             </div>
 
